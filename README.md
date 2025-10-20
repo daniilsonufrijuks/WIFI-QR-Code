@@ -7,8 +7,6 @@ Simple Tkinter GUI to generate QR codes for:
 - Plain text / password-only QR codes
 
 Main application code: [main.py](main.py)  
-Key symbols: [`QRApp`](main.py), [`QRApp.generate_qr`](main.py), [`QRApp.save_png`](main.py), [`QRApp.copy_text`](main.py), [`QRApp._build_wifi_text`](main.py), `APP_TITLE` ([main.py](main.py))
-
 ## Requirements
 
 - Python 3.7+
