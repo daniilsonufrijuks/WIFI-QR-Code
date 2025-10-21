@@ -5,6 +5,7 @@ Wi-Fi auto-connect QR
 Simple Tkinter GUI to generate QR codes for:
 - Wi‑Fi auto-connect payloads (WIFI:T:<auth>;S:<ssid>;P:<password>;H:<true|false>;;)
 - Plain text / password-only QR codes
+- URL QR codes (generate a QR that encodes a URL)
 
 Main application code: [main.py](main.py)  
 ## Requirements
@@ -26,6 +27,7 @@ python main.py
 - When in Wi‑Fi mode, enter SSID, password (or leave empty for open networks), choose security (WPA/WEP/nopass), and mark "Hidden network" if applicable.
 - Click "Generate QR" to preview.
 - Use "Save PNG..." to save the generated QR or "Copy text to clipboard" to copy the encoded payload.
+- When in URL mode, enter a full URL (including scheme, e.g. https://example.com). The app encodes the URL verbatim into the QR payload.
 
 The Wi‑Fi payload format is produced by [`QRApp._build_wifi_text`](main.py).
 
